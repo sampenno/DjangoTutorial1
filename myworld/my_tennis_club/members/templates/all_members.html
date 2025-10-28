@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<style> 
+
+  h1{
+    font-family: arial;
+  }
+  li {
+    font-family: arial;
+
+  }
+</style>
+<body>
+
+<h1>Members</h1>
+  
+<ul>
+  {% for x in mymembers %}
+    <li>{{ x.firstname }} {{ x.lastname }}</li>
+  {% endfor %}
+</ul>
+
+</body>
+</html>
